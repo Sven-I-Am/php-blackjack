@@ -33,21 +33,21 @@ Some starter classes were provided by [BeCode](https://github.com/becodeorg/ANT-
 
 ## Timeline
 
-* Day 1 (28/10/2021)
+* Day 1 (:date:28/10/2021)
   * assignment was given at 9AM with short briefing and Q&A by coach [Sicco](https://github.com/Sick-0)
   * created the `php-blackjack` repository on gitHub and `git clone` to local device
   * read through the [readme](https://github.com/becodeorg/ANT-Lamarr-5.34/blob/main/2.The-Hill/php/4.oop-blackjackgame/README.md) to understand the mission objective
   * created this readme for an overview of the exercise and to keep track of progress
   * what got done so far:
-    * created file structure :white_check_mark:
-    * created .gitignore to ignore .idea folder :white_check_mark:
-    * created index.php file :white_check_mark:
-    * first commit and push of the project at 10:40AM
+    * created file structure :heavy_check_mark:
+    * created .gitignore to ignore .idea folder :heavy_check_mark:
+    * created index.php file :heavy_check_mark:
+    * first commit and push of the project at 10:40AM :heavy_check_mark:
 
 ## To Do
 
 This to do list is for my personal use, the full to do list is added at the start of the challenge and as I complete
-objectives they will be moved up into the timeline section and ticked off using either emotes such as :white_check_mark: 
+objectives they will be moved up into the timeline section and ticked off using either emotes such as :heavy_check_mark: 
 or the `checkbox` syntax [ ] [x] provided by markdown.
 
 #### create the base classes :x:
