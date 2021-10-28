@@ -55,8 +55,12 @@ Some starter classes were provided by [BeCode](https://github.com/becodeorg/ANT-
         * initiate property `$dealer` from class `Player` (for now) :heavy_check_mark:
         * initiate property `$deck` from the `Deck` class :heavy_check_mark:
         * `shuffle` said `$deck` :heavy_check_mark:
-      **the constructor method confused the hell out of me, I couldn't figure out how to test if what I was coding was right so I took a step back and started over. I created a test.php file to check the output of the Blackjack class versus the example code. and it works!:sunglasses:**
+      * **:question: the constructor method confused the hell out of me, I couldn't figure out how to test if what I was coding was right so I took a step back and started over. I created a test.php file to check the output of the Blackjack class versus the example code. and it works!:sunglasses:**
       * update `README`  :heavy_check_mark:
+      * created the `constructor` in class `Player`:heavy_check_mark:
+        * made it expect object `Deck` passed from `Blackjack` as parameter :heavy_check_mark:
+          * **:exclamation: I had to switch some things around in the `Blackjack` constructor in order to pass the $deck object to `Player`**
+        * draw 2 cards for `Player` using `drawCard()` method from class `Deck` :heavy_check_mark:
 
 ## To Do
 
@@ -67,10 +71,7 @@ or the `checkbox` syntax [ ] [x] provided by markdown.
 #### create the base classes :x:
 1. create class `Player` in the file `Player.php` :heavy_check_mark:
 2. create a class `Blackjack` in the file `Blackjack.php` :heavy_check_mark:
-3. In the constructor of the `Player` class :x:
-   * Make it expect the `Deck` object as a parameter. :x:
-   * Pass this `Deck` from the `Blackjack` constructor. :x:
-   * Now draw 2 cards for the player. You have to use an existing method for this from the Deck class. :x:
+3. In the constructor of the `Player` class expect `Deck` object passed from `Blackjack`class as parameter then draw 2 cards for the player using drawCard(). :heavy_check_mark:
 4. Go back to the `Player` class and add the following logic in your empty methods: :x:
    * `getScore` loops over all the cards and return the total value of that player. :x:
    * `hasLost` will return the `bool` of the lost property. :x:

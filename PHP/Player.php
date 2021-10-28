@@ -5,7 +5,15 @@ class Player
 {
     private array $cards;
     private bool $lost = false;
-    
+
+    public function __construct(Deck $deck){
+        $this->cards = [];
+        for ($i = 0; $i < 2; $i++)
+        {
+            array_push($this->cards, $deck->drawCard());
+        }
+    }
+
     public function hit(){
         echo 'hit';
     }
