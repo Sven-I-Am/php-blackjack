@@ -57,10 +57,19 @@ Some starter classes were provided by [BeCode](https://github.com/becodeorg/ANT-
         * `shuffle` said `$deck` :heavy_check_mark:  
 **:question: the constructor method confused the hell out of me, I couldn't figure out how to test if what I was coding was right so I took a step back and started over. I created a test.php file to check the output of the Blackjack class versus the example code. and it works!:sunglasses:**
       * update `README`  :heavy_check_mark:
-      * created the `constructor` in class `Player`:heavy_check_mark:
-        * made it expect object `Deck` passed from `Blackjack` as parameter :heavy_check_mark:  
-        **:exclamation: I had to switch some things around in the `Blackjack` constructor in order to pass the $deck object to `Player`**
-        * draw 2 cards for `Player` using `drawCard()` method from class `Deck` :heavy_check_mark:
+    * created the `constructor` in class `Player`:heavy_check_mark:
+      * made it expect object `Deck` passed from `Blackjack` as parameter :heavy_check_mark:  
+      **:exclamation: I had to switch some things around in the `Blackjack` constructor in order to pass the $deck object to `Player`**
+      * draw 2 cards for `Player` using `drawCard()` method from class `Deck` :heavy_check_mark:
+    * add functionality to methods in class `Player`
+      * getScore() :heavy_check_mark:  
+      :exclamation: something strange is going on with the score maths, keep an eye on it!
+      * hasLost() keeps track of `bool $lost` :heavy_check_mark:
+      * hit() adds card to player hand and auto checks score for loss condition :heavy_check_mark:
+      * surrender() sets `bool $lost = true` :heavy_check_mark:
+      * stand() added but empty, future me can figure that out later :heavy_check_mark:
+:date:28/10/2021 :clock4: 3:50PM
+:tada:I finished the base classes part of the exercise:tada:
 
 ## To Do
 
@@ -68,19 +77,11 @@ This to do list is for my personal use, the full to do list is added at the star
 objectives they will be moved up into the timeline section and ticked off using either emotes such as :heavy_check_mark: 
 or the `checkbox` syntax [ ] [x] provided by markdown.
 
-#### create the base classes :x:
+#### create the base classes :heavy_check_mark:
 1. create class `Player` in the file `Player.php` :heavy_check_mark:
 2. create a class `Blackjack` in the file `Blackjack.php` :heavy_check_mark:
 3. In the constructor of the `Player` class expect `Deck` object passed from `Blackjack`class as parameter then draw 2 cards for the player using drawCard(). :heavy_check_mark:
-4. Go back to the `Player` class and add the following logic in your empty methods: :x:
-   * `getScore` loops over all the cards and return the total value of that player. :x:
-   * `hasLost` will return the `bool` of the lost property. :x:
-   * `hit` should add a card to the player. If this brings him above 21, set `lost` property to `true`. :x:
-     1. To count his score use the method `getScore` you wrote earlier. :x:
-     2. This method should expect the `$deck` variable as an argument from outside, to draw the card. :x:
-        * (optional) For bonus points make the number 21 a class constant: this is a magical value we want to avoid. :x:
-     3. `surrender` should make you surrender the game. (Dealer wins.) This sets the property `lost` in the `player` instance to true. :x:
-     4. `stand` does not have a method in the player class but will instead call hit on the `dealer` instance. (you have to do nothing here) :x:
+4. Go back to the `Player` class and add requested logic in your empty methods: :heavy_check_mark:
 
 #### create the index.php file :x:
 1. Create an index.php file: :x:
