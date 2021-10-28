@@ -47,6 +47,16 @@ Some starter classes were provided by [BeCode](https://github.com/becodeorg/ANT-
       * private properties added :heavy_check_mark:
       * empty public methods added :heavy_check_mark:
         * was confused at first because of the use of 'methods' rather than 'functions', but I found [this discussion on stackoverflow](https://stackoverflow.com/questions/22913321/why-functions-are-called-methods-in-java) that cleared up my confusion
+    * created class 'Blackjack' in file 'Blackjack.php' :heavy_check_mark:
+      * private properties added :heavy_check_mark:
+      * public methods added that return their respective objects :heavy_check_mark:
+      * added constructor method to:
+        * initiate property `$player` from class `Player` :heavy_check_mark:
+        * initiate property `$dealer` from class `Player` (for now) :heavy_check_mark:
+        * initiate property `$deck` from the `Deck` class :heavy_check_mark:
+        * `shuffle` said `$deck` :heavy_check_mark:
+      **the constructor method confused the hell out of me, I couldn't figure out how to test if what I was coding was right so I took a step back and started over. I created a test.php file to check the output of the Blackjack class versus the example code. and it works!:sunglasses:**
+      * update `README`  :heavy_check_mark:
 
 ## To Do
 
@@ -56,19 +66,7 @@ or the `checkbox` syntax [ ] [x] provided by markdown.
 
 #### create the base classes :x:
 1. create class `Player` in the file `Player.php` :heavy_check_mark:
-2. create a class `Blackjack` in the file `Blackjack.php` :x:
-   * add 3 private properties :x:
-     1. `player` (Player) :x:
-     2. `dealer` (Player for now) :x:
-     3. `deck` (Deck) :x:
-   * Add the following public methods: :x:
-     1. `getPlayer` (returns the player object) :x:
-     2. `getDealer` (returns the dealer object) :x:
-     3. `getDeck` (returns the deck object) :x:
-   * In the constructor do the following: :x:
-     1. Instantiate the Player class twice, insert it into the `player` property and a `dealer` property. :x:
-     2. Create a new `deck` object (code has already been written for you!). :x:
-     3. Shuffle the cards with `shuffle` method on `deck`. :x:
+2. create a class `Blackjack` in the file `Blackjack.php` :heavy_check_mark:
 3. In the constructor of the `Player` class :x:
    * Make it expect the `Deck` object as a parameter. :x:
    * Pass this `Deck` from the `Blackjack` constructor. :x:
