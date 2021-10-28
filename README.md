@@ -43,6 +43,10 @@ Some starter classes were provided by [BeCode](https://github.com/becodeorg/ANT-
     * created .gitignore to ignore .idea folder :heavy_check_mark:
     * created index.php file :heavy_check_mark:
     * first commit and push of the project at 10:40AM :heavy_check_mark:
+    * created class `Player` in file `Player.php` :heavy_check_mark:
+      * private properties added :heavy_check_mark:
+      * empty public methods added :heavy_check_mark:
+        * was confused at first because of the use of 'methods' rather than 'functions', but I found [this discussion on stackoverflow](https://stackoverflow.com/questions/22913321/why-functions-are-called-methods-in-java) that cleared up my confusion
 
 ## To Do
 
@@ -51,15 +55,7 @@ objectives they will be moved up into the timeline section and ticked off using 
 or the `checkbox` syntax [ ] [x] provided by markdown.
 
 #### create the base classes :x:
-1. create class `player` in the file `player.php` :x:
-   * add 2 private properties :x:
-     1. `cards` array :x:
-     2. `lost` boolean :x:
-   * add empty public methods :x:
-     1. `hit` :x:
-     2. `surrender` :x:
-     3. `geScore` :x:
-     4. `hasLost` :x:
+1. create class `Player` in the file `Player.php` :heavy_check_mark:
 2. create a class `Blackjack` in the file `Blackjack.php` :x:
    * add 3 private properties :x:
      1. `player` (Player) :x:
