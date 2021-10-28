@@ -15,15 +15,18 @@ class Blackjack
 
     }
 
-    public function getPlayer(){
+    public function getPlayer(): Player
+    {
         return $this->player;
     }
 
-    public function getDealer(){
+    public function getDealer(): Player
+    {
         return $this->dealer;
     }
 
-    public function getDeck(){
+    public function getDeck(): Deck
+    {
         return $this->deck;
     }
 }

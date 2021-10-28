@@ -47,4 +47,9 @@ class Player
     {
         //should call hit() on $dealer -> leave for now
     }
+
+    public function getPlayerCards() : array
+    {
+        return $this->cards;
+    }
 }

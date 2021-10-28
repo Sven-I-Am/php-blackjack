@@ -67,9 +67,14 @@ Some starter classes were provided by [BeCode](https://github.com/becodeorg/ANT-
       * hasLost() keeps track of `bool $lost` :heavy_check_mark:
       * hit() adds card to player hand and auto checks score for loss condition :heavy_check_mark:
       * surrender() sets `bool $lost = true` :heavy_check_mark:
-      * stand() added but empty, future me can figure that out later :heavy_check_mark:
-:date:28/10/2021 :clock4: 3:50PM
+      * stand() added but empty, future me can figure that out later :heavy_check_mark:  
+:date:28/10/2021 :clock4: 3:50PM  
 :tada:I finished the base classes part of the exercise:tada:
+    * created `index.php` with visualisation of cards, score, winner and buttons for player move :heavy_check_mark:
+    * buttons work :heavy_check_mark:
+    * score is live and winner is displayed at end of game :heavy_check_mark:  
+    :exclamation: still have to separate the `dealer` into its own class
+    * **FINAL** commit and push of the day at :clock6: 5:55PM
 
 ## To Do
 
@@ -83,14 +88,9 @@ or the `checkbox` syntax [ ] [x] provided by markdown.
 3. In the constructor of the `Player` class expect `Deck` object passed from `Blackjack`class as parameter then draw 2 cards for the player using drawCard(). :heavy_check_mark:
 4. Go back to the `Player` class and add requested logic in your empty methods: :heavy_check_mark:
 
-#### create the index.php file :x:
-1. Create an index.php file: :x:
-   * Require all the files with the classes you already created. :x:
-   * Start the PHP session :x:
-   * If the session does not have a `Blackjack` variable yet: :x:
-     1. Create a new `Blackjack` object. :x:
-     2. Put the `Blackjack` object in the session :x:
-2. Use buttons or links to send to the `index.php` page what the player's action is. :x:
+#### create the index.php file :heavy_check_mark:
+1. Create an index.php file: :heavy_checK_mark:
+2. Use buttons or links to send to the `index.php` page what the player's action is. :heavy_check_mark:
 
 #### The dealer :x:
 
@@ -101,12 +101,12 @@ or the `checkbox` syntax [ ] [x] provided by markdown.
 
 #### Final push :x:
 
-1. **hit** button calls `hit` on player, then check the lost status of the player. :x:
-   * pass a `Deck` variable to this function, use the `Blackjack::getDeck()` method for this. :x:
-2. **stand** button calls `hit` on dealer, then check the lost status of the dealer. If he is not lost, compare scores to set the winner (If equal the dealer wins). :x:
-3. **Surrender**: the dealer auto wins. :x:
-4. Always display on the page the scores of both players. If you have a winner, display it. :x:
-5. End of the game: destroy the current `blackjack` variable so the game restarts. :x:
+1. **hit** button calls `hit` on player, then check the lost status of the player. :heavy_check_mark:
+   * pass a `Deck` variable to this function, use the `Blackjack::getDeck()` method for this. :heavy_check_mark:
+2. **stand** button calls `hit` on dealer, then check the lost status of the dealer. If he is not lost, compare scores to set the winner (If equal the dealer wins). :heavy_check_mark:
+3. **Surrender**: the dealer auto wins. :heavy_check_mark:
+4. Always display on the page the scores of both players. If you have a winner, display it. :heavy_check_mark:
+5. End of the game: destroy the current `blackjack` variable so the game restarts. :heavy_check_mark:
 
 # Nice to have
 1. Implement a betting system :x:
