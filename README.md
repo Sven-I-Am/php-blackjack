@@ -54,12 +54,12 @@ Some starter classes were provided by [BeCode](https://github.com/becodeorg/ANT-
         * initiate property `$player` from class `Player` :heavy_check_mark:
         * initiate property `$dealer` from class `Player` (for now) :heavy_check_mark:
         * initiate property `$deck` from the `Deck` class :heavy_check_mark:
-        * `shuffle` said `$deck` :heavy_check_mark:
-      * **:question: the constructor method confused the hell out of me, I couldn't figure out how to test if what I was coding was right so I took a step back and started over. I created a test.php file to check the output of the Blackjack class versus the example code. and it works!:sunglasses:**
+        * `shuffle` said `$deck` :heavy_check_mark:  
+**:question: the constructor method confused the hell out of me, I couldn't figure out how to test if what I was coding was right so I took a step back and started over. I created a test.php file to check the output of the Blackjack class versus the example code. and it works!:sunglasses:**
       * update `README`  :heavy_check_mark:
       * created the `constructor` in class `Player`:heavy_check_mark:
-        * made it expect object `Deck` passed from `Blackjack` as parameter :heavy_check_mark:
-          * **:exclamation: I had to switch some things around in the `Blackjack` constructor in order to pass the $deck object to `Player`**
+        * made it expect object `Deck` passed from `Blackjack` as parameter :heavy_check_mark:  
+        **:exclamation: I had to switch some things around in the `Blackjack` constructor in order to pass the $deck object to `Player`**
         * draw 2 cards for `Player` using `drawCard()` method from class `Deck` :heavy_check_mark:
 
 ## To Do
