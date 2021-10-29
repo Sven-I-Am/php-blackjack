@@ -7,6 +7,7 @@ class Player
     private array $cards;
     private bool $lost = false;
     private bool $hasBlackjack = false;
+    private bool $canBet;
 
     public function __construct(Deck $deck)
     {
@@ -15,6 +16,7 @@ class Player
         {
             $this->hit($deck);
         }
+        $this->canBet = true;
     }
 
     public function hit(Deck $deck)
@@ -58,7 +60,18 @@ class Player
     {
         if ($this->getScore()==self::BJ){
             $this->hasBlackjack = true;
+            $this->chips-=5;
         }
         return $this->hasBlackjack;
+    }
+
+    public function getBet(): bool
+    {
+        return $this->canBet;
+    }
+
+    public function bet():bool
+    {
+        return$this->canBet = false;
     }
 }

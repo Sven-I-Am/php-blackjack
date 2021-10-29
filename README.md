@@ -83,6 +83,10 @@ Some starter classes were provided by [BeCode](https://github.com/becodeorg/ANT-
     * adjusted code where needed to suit the changes and updated the winner checks in `index.php` :heavy_check_mark:
     * update README :heavy_check_mark:
     * **done with the required elements of the exercise, will start on the *nice to have* features after `git commit` and `git push`** :clock10: 9:55AM
+    * implemented a betting system, new game resets chips to 100, new round keeps the chips. :heavy_check_mark:
+    * most of the blackjack first works :heavy_check_mark:
+      * **:exclamation: have to implement the tie on first draw still
+    * :clock1: lunchtime commit and push :heavy_check_mark:
 
 ## To Do
 
@@ -115,9 +119,6 @@ or the `checkbox` syntax [ ] [x] provided by markdown.
 5. End of the game: destroy the current `blackjack` variable so the game restarts. :heavy_check_mark:
 
 # Nice to have
-1. Implement a betting system :x:
-   * Every new player (new session) starts with 100 chips :x:
-   * After the player gets his 2 first cards every round ask how much he wants to bet. He needs to bet at least 5 chips. :x:
-   * If the player wins the bet he gains double the amount of chips. :x:
+1. Implement a betting system :heavy_check_mark:
 2. Implement the blackjack first turn rule: if the player draws 21 the first turn: he directly wins. If the dealer draws 21 the first turn, he wins. If both draw it, it is a tie.  :x:
    1. When you implement both nice to have features, a blackjack means an auto win of 10 chips, a blackjack of the dealer a loss of 5 chips for the player. :x:
