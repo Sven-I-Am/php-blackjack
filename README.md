@@ -85,8 +85,9 @@ Some starter classes were provided by [BeCode](https://github.com/becodeorg/ANT-
     * **done with the required elements of the exercise, will start on the *nice to have* features after `git commit` and `git push`** :clock10: 9:55AM
     * implemented a betting system, new game resets chips to 100, new round keeps the chips. :heavy_check_mark:
     * most of the blackjack first works :heavy_check_mark:
-      * **:exclamation: have to implement the tie on first draw still
     * :clock1: lunchtime commit and push :heavy_check_mark:
+    * implemented the tie on first draw and tested :heavy_check_mark:  
+:tada:**DONE?**:tada:
 
 ## To Do
 
@@ -120,5 +121,4 @@ or the `checkbox` syntax [ ] [x] provided by markdown.
 
 # Nice to have
 1. Implement a betting system :heavy_check_mark:
-2. Implement the blackjack first turn rule: if the player draws 21 the first turn: he directly wins. If the dealer draws 21 the first turn, he wins. If both draw it, it is a tie.  :x:
-   1. When you implement both nice to have features, a blackjack means an auto win of 10 chips, a blackjack of the dealer a loss of 5 chips for the player. :x:
+2. Implement the blackjack first turn rule :heavy_check_mark:

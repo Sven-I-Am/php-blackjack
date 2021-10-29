@@ -87,8 +87,12 @@ if ($endRound==true){
     //check for dealer win conditions
     if (($playerLost == true || $dealerHasBJ==true || $test<=0) && $dealerLost!=true && $playerHasBJ!=true){
         $winner = "DEALER";
+        $haveWinner=true;
+    } elseif($dealerHasBJ==true && $playerHasBJ==true) {
+        $haveWinner = false;
     } else {
         $winner = "PLAYER";
+        $haveWinner = true;
         $_SESSION["chips"] += 10;
     }
 }
@@ -159,7 +163,7 @@ if ($_SESSION["chips"] == 0){
 
         <div class="row">
 
-            <h2 class="alert<?php if($winner=="PLAYER"){ echo ' alert-success';}elseif($winner=="DEALER"){echo ' alert-danger';}?>"><?php if($endRound==true){ echo $winner . " WINS!";} ?></h2>
+            <h2 class="alert<?php if($winner=="PLAYER"){ echo ' alert-success';}elseif($winner=="DEALER"){echo ' alert-danger';}?>"><?php if($endRound==true && $haveWinner==true){ echo $winner . " WINS!";} elseif($endRound==true && $haveWinner==false){echo "IT'S A TIE";} ?></h2>
         </div>
     </div>
 </body>
