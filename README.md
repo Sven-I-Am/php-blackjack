@@ -75,6 +75,14 @@ Some starter classes were provided by [BeCode](https://github.com/becodeorg/ANT-
     * score is live and winner is displayed at end of game :heavy_check_mark:  
     :exclamation: still have to separate the `dealer` into its own class
     * **FINAL** commit and push of the day at :clock6: 5:55PM
+* Day 2 (:date: 29/10/2021)
+  * short check-in with coach [Tim](https://github.com/Timmeahj) and the other learners at :clock: 9:00AM
+  * get coding:
+    * extended `Player` class into `Dealer` class :heavy_check_mark:
+    * added method `dealerHit` that calls the `parent::hit()` method until the dealer hit 15 or up :heavy_check_mark:
+    * adjusted code where needed to suit the changes and updated the winner checks in `index.php` :heavy_check_mark:
+    * update README :heavy_check_mark:
+    * **done with the required elements of the exercise, will start on the *nice to have* features after `git commit` and `git push`** :clock10: 9:55AM
 
 ## To Do
 
@@ -89,20 +97,18 @@ or the `checkbox` syntax [ ] [x] provided by markdown.
 4. Go back to the `Player` class and add requested logic in your empty methods: :heavy_check_mark:
 
 #### create the index.php file :heavy_check_mark:
-1. Create an index.php file: :heavy_checK_mark:
+1. Create an index.php file: :heavy_check_mark:
 2. Use buttons or links to send to the `index.php` page what the player's action is. :heavy_check_mark:
 
-#### The dealer :x:
+#### The dealer :heavy_check_mark:
 
-1. [extend](https://www.php.net/manual/en/language.oop5.inheritance.php) the `player` class and extend it to a newly created `dealer` class to make the dealer have its own proper behavior.  :x:
-2. Change the `Blackjack` class to create a new `dealer` object instead of a `player` object for the property of the dealer. :x:
-3. Now create a `hit` function that keeps drawing cards until the dealer has at least 15 points. :x:
-   * The tricky part is that we also need the `lost` check we already had in the `hit` function of the player without duplicating code :x:
+1. extend the `player` class to a newly created `dealer` class to make the dealer have its own proper behavior.  :heavy_check_mark:
+2. Change the `Blackjack` class to create a new `dealer` object instead of a `player` object for the property of the dealer. :heavy_check_mark:
+3. Now create a `hit` function that keeps drawing cards until the dealer has at least 15 points. :heavy_check_mark:
 
-#### Final push :x:
+#### Final push :heavy_check_mark:
 
 1. **hit** button calls `hit` on player, then check the lost status of the player. :heavy_check_mark:
-   * pass a `Deck` variable to this function, use the `Blackjack::getDeck()` method for this. :heavy_check_mark:
 2. **stand** button calls `hit` on dealer, then check the lost status of the dealer. If he is not lost, compare scores to set the winner (If equal the dealer wins). :heavy_check_mark:
 3. **Surrender**: the dealer auto wins. :heavy_check_mark:
 4. Always display on the page the scores of both players. If you have a winner, display it. :heavy_check_mark:

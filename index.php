@@ -6,6 +6,7 @@ require 'PHP/Card.php';
 require 'PHP/Deck.php';
 require 'PHP/Blackjack.php';
 require 'PHP/Player.php';
+require 'PHP/Dealer.php';
 
 session_start();
 function checkSession(){
@@ -28,14 +29,10 @@ if(isset($_POST["input"])){
     switch ($playerMove){
         case ("HIT"):
             $player->hit($deck);
-            $playerLost = $player->hasLost();
             break;
         case ("STAND"):
-            while ($dealer->getScore()<=15){
-                $dealer->hit($deck);
-            }
+            $dealer->dealerHit($deck);
             $endGame = true;
-            $dealerLost = $dealer->hasLost();
             break;
         case ("SURRENDER"):
             $player->surrender();
@@ -50,44 +47,26 @@ if(isset($_POST["input"])){
             $dealer = $game->getDealer();
             break;
     }
-    $playerScore = $player->getScore();
-    $dealerScore= $dealer->getScore();
+}
+$playerScore = $player->getScore();
+$dealerScore= $dealer->getScore();
+$playerLost = $player->hasLost();
+$dealerLost = $dealer->hasLost();
+$playerHasBJ = $player->hasBlackjack();
+$dealerHasBJ = $dealer->hasBlackjack();
 
-
-
-    if ($playerLost==true || $dealerLost==true){
-        $endGame = true;
-        if ($playerLost!=true){
-            $winner = "PLAYER";
-        }
-        if ($dealerLost!=true){
-            $winner = "DEALER";
-        }
-    } elseif ($endGame==true){
-        $test = $playerScore - $dealerScore;
-        if ($test<=0){
-            $winner = "DEALER";
-        } else {
-            $winner = "PLAYER";
-        }
+if ($playerLost==true || $dealerLost==true || $playerHasBJ==true || $dealerHasBJ==true){
+    $endGame = true;
+}
+if ($endGame==true){
+    $test = $playerScore - $dealerScore; //to determine a score tie
+    //check for dealer win conditions
+    if (($playerLost == true || $dealerHasBJ==true || $test<=0) && $dealerLost!=true && $playerHasBJ!=true){
+        $winner = "DEALER";
+    } else {
+        $winner = "PLAYER";
     }
-
-
-
-
 }
-
-function whatIsHappening() {
-    echo '<h2>$_GET</h2>';
-    var_dump($_GET);
-    echo '<h2>$_POST</h2>';
-    var_dump($_POST);
-    echo '<h2>$_COOKIE</h2>';
-    var_dump($_COOKIE);
-    echo '<h2>$_SESSION</h2>';
-    var_dump($_SESSION);
-}
-//whatIsHappening();
 ?>
 <!doctype html>
 <html lang="en">

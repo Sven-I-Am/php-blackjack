@@ -6,6 +6,7 @@ class Player
     public const BJ = 21;
     private array $cards;
     private bool $lost = false;
+    private bool $hasBlackjack = false;
 
     public function __construct(Deck $deck)
     {
@@ -45,11 +46,19 @@ class Player
 
     public function stand()
     {
-        //should call hit() on $dealer -> leave for now
+        //should call for dealerHit() method... still figuring out how.
     }
 
     public function getPlayerCards() : array
     {
         return $this->cards;
+    }
+
+    public function hasBlackjack(): bool
+    {
+        if ($this->getScore()==self::BJ){
+            $this->hasBlackjack = true;
+        }
+        return $this->hasBlackjack;
     }
 }
